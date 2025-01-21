@@ -3,6 +3,8 @@
 
 Weather Wise is a simple weather application that allows users to search for weather information by city. It displays the current temperature, humidity, weather conditions, and dynamic icons/images based on the weather.
 
+### You can view the [Live Demo](https://weather--wise.vercel.app/) here.
+
 ---
 
 ## Features
