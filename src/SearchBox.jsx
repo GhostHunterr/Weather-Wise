@@ -19,7 +19,6 @@ export default function SearchBox({ updateInfo }) {
         }&units=metric`
       );
       let jsonRes = await res.json();
-      console.log(jsonRes);
       let result = {
         place: `${city}, ${jsonRes.sys.country}`,
         imageUrl: setImage(jsonRes.main.temp, jsonRes.weather[0].main),
@@ -31,7 +30,6 @@ export default function SearchBox({ updateInfo }) {
         humidity: jsonRes.main.humidity,
         fellsLike: jsonRes.main.feels_like,
       };
-      console.log(result);
       return result;
     } catch (err) {
       throw err;
@@ -49,7 +47,8 @@ export default function SearchBox({ updateInfo }) {
       setCity("");
       let result = await getWeatherInfo();
       updateInfo(result);
-    } catch (err) {
+    } catch (e) {
+      updateInfo({});
       setError(true);
     }
   };

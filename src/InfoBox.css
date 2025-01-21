@@ -1,8 +1,21 @@
 .InfoBox {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .cardContainer {
-  display: flex;
-  justify-content: center;
+  margin: 20px auto;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 16px;
 }

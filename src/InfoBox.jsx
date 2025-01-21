@@ -50,7 +50,9 @@ export default function InfoBox({ info }) {
           </div>
         </>
       ) : (
-        <h1 style={{ opacity: 0.7 }}>Nothing to Display</h1>
+        <h1 style={{ opacity: 0.7 }}>
+          Enter a valid city name above to get the weather information.
+        </h1>
       )}
     </div>
   );
